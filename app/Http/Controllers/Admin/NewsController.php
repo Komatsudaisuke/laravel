@@ -9,8 +9,8 @@ class NewsController extends Controller
 {
     //以下
     public function add()
-{
-   return view('admin.news.create');   
-}
+    {
+       return view('admin.news.create');   
+    }
 
 }
