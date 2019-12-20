@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>マイプロフィール</h2>
-                <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ action('Admin\ProfileController@create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
                         <ul>
@@ -18,25 +18,25 @@
                     <div class="form-group row">
                         <label class="col-md-2">氏名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('title') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">性別</label>
-                        <p><label for="dansei">男性</label><input type="radio" name="sex" id="dansei" value="male"></p>
-                        <p><label for="jyosei">女性</label><input type="radio" name="sex" id="jyosei" value="female"></p>
+                        <p><label for="dansei">男性</label><input type="radio" name="gender" id="dansei" value="male"></p>
+                        <p><label for="jyosei">女性</label><input type="radio" name="gender" id="jyosei" value="female"></p>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2">趣味</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="hobby" value="{{ old('title') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="20">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     

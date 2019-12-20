@@ -24,7 +24,7 @@
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -59,18 +59,6 @@
         </div>
     </body>
 </html>
-
-@section('title', 'my profile')
-
-@section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2>my profile</h2>
-            </div>
-        </div>
-    </div>
-@endsection
 
 <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">

@@ -14,11 +14,11 @@ class CreateHistoriesTable extends Migration
     public function up()
     {
         Schema::create('histories', function (Blueprint $table) {
-            $table->Increments('id');
-            $table->timestamps();
+            $table->increments('id');
             $table->integer('news_id');
             $table->string('edited_at');
-            
+
+            $table->timestamps();
         });
     }
 
